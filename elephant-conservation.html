@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐘 Elephant Conservation - Wildlife Haven Zoo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            animation: slideBackground 30s infinite ease-in-out;
+        }
+
+        @keyframes slideBackground {
+            0% { background-image: url('./image/African Wild Dog.jpg'); }
+            20% { background-image: url('./image/Arctic-Wolf-2291-Edit.jpg'); }
+            40% { background-image: url('./image/bird-8022869_640.jpg'); }
+            60% { background-image: url('./image/Caracal.jpg'); }
+            80% { background-image: url('./image/Jaguar Spotted.webp'); }
+            100% { background-image: url('./image/polar bear.jpg'); }
+        }
+
+        .section-bg {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-link {
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #facc15;
+            text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white py-8">
+        <div class="container mx-auto">
+            <nav class="flex justify-between items-center mb-6">
+                <div class="text-2xl font-bold">Wildlife Haven Zoo</div>
+                <ul class="flex space-x-6">
+                    <li><a href="home.html" class="nav-link text-lg">Home</a></li>
+                    <li><a href="about.html" class="nav-link text-lg">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link text-lg">Contact Us</a></li>
+                    <li><a href="tickect.html" class="nav-link text-lg">Tickets</a></li>
+                    <li><a href="conservation.html" class="nav-link text-lg">Conservation</a></li>
+                    <li><a href="login.html" class="nav-link text-lg">Login</a></li>
+                    <li><a href="signup.html" class="nav-link text-lg">Signup</a></li>
+                </ul>
+            </nav>
+            <div class="text-center">
+                <h1 class="text-5xl font-extrabold">🐘 Elephant Conservation</h1>
+                <p class="text-lg mt-2 font-medium">Protecting Elephants Worldwide 🌍</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conservation Details Section -->
+    <section class="mt-10 section-bg">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-center">Our Elephant Conservation Efforts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-yellow-400">Anti-Poaching Patrols</h3>
+                    <p class="text-gray-300 mt-2">We deploy patrols to prevent illegal poaching and protect elephant populations.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-yellow-400">Habitat Restoration</h3>
+                    <p class="text-gray-300 mt-2">Restoring natural habitats in Africa to ensure elephants thrive.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-yellow-400">Community Education</h3>
+                    <p class="text-gray-300 mt-2">Educating local communities to support conservation efforts.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-yellow-400">Orphanage Support</h3>
+                    <p class="text-gray-300 mt-2">Caring for orphaned elephants and preparing them for the wild.</p>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <a href="home.html" class="bg-yellow-500 text-black px-4 py-2 rounded-lg font-bold hover:bg-yellow-600">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-black text-white py-6 mt-10">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Wildlife Haven Zoo. All rights reserved. 🐾</p>
+        </div>
+    </footer>
+</body>
+</html>
